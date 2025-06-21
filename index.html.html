@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portfólio - [Seu Nome]</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+  <h1>[Seu Nome]</h1>
+  <nav>
+    <a href="#sobre">Sobre</a>
+    <a href="#habilidades">Habilidades</a>
+    <a href="#projetos">Projetos</a>
+    <a href="#contato">Contato</a>
+  </nav>
+</header>
+
+<section id="sobre" class="fade">
+  <h2>Sobre mim</h2>
+  <p>Sou um editor de vídeo apaixonado por transformar ideias em histórias visuais impactantes. Trabalho com YouTube, Instagram, TikTok e projetos comerciais.</p>
+</section>
+
+<section id="habilidades" class="fade">
+  <h2>Habilidades</h2>
+  <ul>
+    <li>Adobe Premiere</li>
+    <li>After Effects</li>
+    <li>DaVinci Resolve</li>
+    <li>Motion Graphics</li>
+    <li>Color Grading</li>
+  </ul>
+</section>
+
+<section id="projetos" class="fade">
+  <h2>Projetos</h2>
+
+  <div class="card">
+    <h3>Vídeo Institucional - Empresa X</h3>
+    <p>Storytelling, correção de cor e efeitos de transição.</p>
+    <a href="#" target="_blank">Ver Projeto</a>
+  </div>
+
+  <div class="card">
+    <h3>Série YouTube - Canal Y</h3>
+    <p>Montagem dinâmica, legendas e sonorização completa.</p>
+    <a href="#" target="_blank">Ver Playlist</a>
+  </div>
+
+  <div class="card">
+    <h3>Campanha Instagram Ads - Marca Z</h3>
+    <p>Edição rápida e otimizada para conversão.</p>
+    <a href="#" target="_blank">Ver Vídeo</a>
+  </div>
+
+</section>
+
+<section id="contato" class="fade">
+  <h2>Contato</h2>
+  <p>Email: <a href="mailto:seuemail@email.com">seuemail@email.com</a></p>
+  <p>Instagram: <a href="https://instagram.com/seuusuario" target="_blank">@seuusuario</a></p>
+  <p>LinkedIn: <a href="https://linkedin.com/in/seuusuario" target="_blank">linkedin.com/in/seuusuario</a></p>
+</section>
+
+<footer>
+  &copy; 2025 [Seu Nome] - Todos os direitos reservados
+</footer>
+
+<script>
+  // Fade in ao rolar
+  const observer = new IntersectionObserver(entries => {
+    entries.forEach(entry => {
+      if(entry.isIntersecting) {
+        entry.target.classList.add('show');
+      }
+    });
+  });
+
+  document.querySelectorAll('.fade').forEach(section => {
+    observer.observe(section);
+  });
+</script>
+
+</body>
+</html>
